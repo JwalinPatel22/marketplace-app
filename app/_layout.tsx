@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // children i.e. type: react components are passed as props
 function RouteGaurd({ children }: { children: React.ReactNode }) {
   const router = useRouter();
-  const isAuth = true;
+  const isAuth = false;
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {

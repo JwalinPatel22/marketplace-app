@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Entypo from "@expo/vector-icons/Entypo";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 export default function TabsLayout() {
   return (
@@ -24,6 +25,7 @@ export default function TabsLayout() {
           },
         }}
       />
+
       <Tabs.Screen
         name="login"
         options={{
@@ -33,6 +35,15 @@ export default function TabsLayout() {
           ),
         }}
       />
+
+      {/* <Tabs.Screen
+        name="complaint"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome6 name="screwdriver-wrench" size={24} color="black" />
+          ),
+        }}
+      /> */}
     </Tabs>
   );
 }

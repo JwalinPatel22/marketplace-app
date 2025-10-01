@@ -11,6 +11,7 @@ export default function Index() {
       <Button mode="text" onPress={signOut} icon={"logout"}>
         SignOut
       </Button>
+      <Button>Button added using neovim</Button>
     </View>
   );
 }
